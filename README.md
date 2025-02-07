@@ -65,11 +65,18 @@ The git repository for this project is organized as follows:
     │       └── credit_card_routing_cleaned_data.csv
     │
     ├── src/
-    │   ├── data_preprocessing.py
-    │   ├── feature_engineering.py
-    │   ├── model_training.py
-    │   ├── model_evaluation.py
-    │   └── visualization.py
+    │   ├── components/
+    │   │   ├── data_preprocessing.py
+    │   │   ├── feature_engineering.py
+    │   │   ├── model_training.py
+    │   │   ├── model_evaluation.py
+    │   │   └── deployment.py
+    │   └── init.py
+    │
+    ├── test/
+    │   ├── init.py
+    │   ├── test_data_processing.py
+    │   └── test_model_training.py
     │
     ├── notebook/
     │   └── credit_card_routing_for_online_purchase_v1_1.ipynb
@@ -84,8 +91,10 @@ The git repository for this project is organized as follows:
     ├── reports/
     │   └── project_report.pdf
     │
+    ├── main.py
     ├── README.md
-    └── requirements.txt
+    ├── requirements.txt
+    └── LICENSE
 
 ## Data Quality Assessment
 The initial dataset contained 50,410 records with 8 columns. Key findings from the data quality assessment include:
